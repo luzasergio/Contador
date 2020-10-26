@@ -1,7 +1,5 @@
 package com.example.contador;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -48,8 +46,8 @@ public class MainActivity extends Activity {
 
         //Creo una variable de la clase TextView donde almacenar el elemento Button dónde quiero cargar un texto resultado
 
-        TextView textoResultado = (TextView)findViewById(R.id.contadorPulsaciones);
+        TextView textoResultado = (TextView)findViewById(R.id.contadorTexto);
 
-        textoResultado.setText("Contador: " + contador);
+        textoResultado.setText("" + contador);
     }
 }
