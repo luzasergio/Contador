@@ -11,6 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center_horizontal"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,7 +21,7 @@
 
         <EditText
             android:id="@+id/tituloTexto"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
             android:gravity="center"
@@ -33,35 +34,67 @@
 
         <EditText
             android:id="@+id/contadorTexto"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
             android:gravity="center"
             android:inputType="textPersonName"
             android:textSize="56sp" />
 
-        <Button
-            android:id="@+id/incrementa"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Incrementa"
-            android:onClick="incrementaContador"
-            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/resetea"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Resetear"
-            android:onClick="reseteaContador"
-            />
+            android:id="@+id/incrementa"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="incrementaContador"
+            android:text="+"
+            android:textSize="75dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+        </androidx.appcompat.widget.AppCompatEditText>
 
         <Button
             android:id="@+id/decrementa"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Decrementa"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:onClick="restaContador"
-            />
+            android:text="-"
+            android:textSize="75dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="100dp"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/resetea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="reseteaContador"
+            android:text="Resetear" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
