@@ -35,18 +35,24 @@
             android:id="@+id/incrementa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Incrementa" />
+            android:text="Incrementa"
+            android:onClick="incrementaContador"
+            />
 
         <Button
             android:id="@+id/resetea"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Resetear" />
+            android:text="Resetear"
+            android:onClick="reseteaContador"
+            />
 
         <Button
             android:id="@+id/decrementa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Decrementa" />
+            android:text="Decrementa"
+            android:onClick="restaContador"
+            />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
